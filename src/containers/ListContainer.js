@@ -1,12 +1,15 @@
 import React from 'react';
 import SongList from '../components/SongList';
+import SongDetails from '../components/SongDetails';
 
 class ListContainer extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      songs: null
+      songs: [],
+      chosenSong: null
     };
+  this.handleChosenSong = this.handleChosenSong.bind(this);
   }
 
   componentDidMount(){
@@ -19,21 +22,27 @@ class ListContainer extends React.Component {
       } else {
         const response = request.responseText;
         const data = JSON.parse(response);
-        this.setState({songs: data});
+        const entries = data.feed.entry;
+        this.setState({songs: entries});
       }
     });
     request.send();
   }
 
+  handleChosenSong(index){
+  this.setState({chosenSong: index});
+}
+
   render(){
-    if(this.state.songs !== null){
-      console.log(this.state.songs)
+    if(!this.state.songs){
+      return null
     }
+    const song = this.state.songs[this.state.chosenSong];
     return(
-      <SongList songs={this.state.songs}/>
-
-
-    );
+        <div>
+        <SongList songs={this.state.songs} onSelect={this.handleChosenSong}/>
+      </div>
+    )
   }
 }
 
