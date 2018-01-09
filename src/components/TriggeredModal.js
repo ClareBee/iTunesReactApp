@@ -17,6 +17,7 @@ class Trigger extends React.Component {
 		return (
 			<div className="modal-container" style={{ height: 200 }}>
 				<Button
+          className="find-more"
 					bsStyle="warning"
 					bsSize="large"
 					onClick={() => this.setState({ show: true })}
