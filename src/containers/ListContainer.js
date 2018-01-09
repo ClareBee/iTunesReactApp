@@ -41,7 +41,7 @@ class ListContainer extends React.Component {
     return(
         <div>
         <SongList songs={this.state.songs} onSelect={this.handleChosenSong}/>
-        <SongDetails song={song} />
+        <SongDetails song={song} index={this.state.chosenSong} />
       </div>
     )
   }

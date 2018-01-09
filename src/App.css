@@ -6,18 +6,26 @@ audio {
   color: white;
   background-image: url('crowd.jpg');
   background-size: contain;
+  padding: 20px;
 }
 
 select {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
+  font-size: 25px;
+  border: 5px solid #62C1F6;
+  margin-left: 50px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
 img {
   width: 200px;
 }
 
-
+body{
+  font-family: 'Rubik', sans-serif;
+  background: #ECF5F7;
+}
 article {
   display: flex;
   flex-flow: column nowrap;
@@ -29,3 +37,11 @@ article {
 .modal-container .modal, .modal-container .modal-backdrop {
    position: absolute;
  }
+
+ #modal-text {
+   color: black;
+ }
+
+.title-text {
+  text-shadow: 2px 2px 5px black;
+}

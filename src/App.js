@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ListContainer from './containers/ListContainer';
-import Trigger from './components/TriggeredModal';
 import Jumbotron1 from './components/Jumbotron';
 import './App.css';
 
@@ -10,9 +9,8 @@ class App extends Component {
     return (
       <div>
         <Jumbotron1 />
-      <ListContainer />
-      <Trigger />
-    </div>
+        <ListContainer />
+      </div>
     );
   }
 }

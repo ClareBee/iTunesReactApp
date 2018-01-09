@@ -17,11 +17,11 @@ class Trigger extends React.Component {
 		return (
 			<div className="modal-container" style={{ height: 200 }}>
 				<Button
-					bsStyle="primary"
+					bsStyle="warning"
 					bsSize="large"
 					onClick={() => this.setState({ show: true })}
 				>
-					Launch contained modal
+					Find out more!
 				</Button>
 
 				<Modal
@@ -36,7 +36,7 @@ class Trigger extends React.Component {
 						</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
-				       something important
+				       <p id="modal-text" >Thanks to <a target="_blank" href="https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/">iTunesApi link</a></p>
 					</Modal.Body>
 					<Modal.Footer>
 						<Button onClick={this.handleHide}>Close</Button>
