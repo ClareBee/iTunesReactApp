@@ -1,4 +1,5 @@
 import React from 'react';
+import SongList from '../components/SongList';
 
 class ListContainer extends React.Component {
   constructor(props){
@@ -29,7 +30,8 @@ class ListContainer extends React.Component {
       console.log(this.state.songs)
     }
     return(
-      <h1>This is the list container</h1>
+      <SongList songs={this.state.songs}/>
+
 
     );
   }
