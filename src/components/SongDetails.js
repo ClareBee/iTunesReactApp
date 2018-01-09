@@ -11,7 +11,7 @@ class SongDetails extends React.Component{
     console.log(this.props.song["im:image"][0].label);
     var bla = Object.values(individual);
     console.log(bla[1]);
-
+    console.log(this.props.song["link"][1]['attributes'].href);
     return(
       <article id="country-detail">
         <h3>
@@ -19,6 +19,7 @@ class SongDetails extends React.Component{
       </h3>
       <img src={this.props.song['im:image'][0].label} />
       <h1>{this.props.song['im:price'].label}</h1>
+      <audio controls><source src={this.props.song["link"][1]['attributes'].href} /></audio>
       </article>
     );
   }
