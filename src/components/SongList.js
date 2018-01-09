@@ -11,13 +11,9 @@ class SongList extends React.Component{
   }
 
   render(){
-      // const top20 = this.props.songs.map((song, index) => {
-      // return <option value={index} key={index}>
-      //   {song.title}
-      // </option>
-    const top20 = this.props.songs.map((song) => {
-        return <option>{song.title.label}</option>
-      });  
+    const top20 = this.props.songs.map((song, index) => {
+        return <option value={index} key={index}>{song.title.label}</option>
+      });
     return(
       <select id="songs" onChange={this.handleChange}>
         {top20}
