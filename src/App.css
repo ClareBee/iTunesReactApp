@@ -56,11 +56,18 @@ article {
   border-radius: 7px;
 }
 
-#song-title {
+#song-title, #chart-position {
   font-weight: bold;
+  display: table;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+
 }
 
 .find-more {
   text-shadow: 2px 2px 5px black;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+
 }
