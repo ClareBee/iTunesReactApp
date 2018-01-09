@@ -1,19 +1,14 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/lib/Jumbotron';
-import Button from './Buttons';
 
 class Jumbotrons extends React.Component {
   render(){
     return(
 
 	<Jumbotron className="title">
-		<h1>Hello, world!</h1>
+		<h1>TopTrax</h1>
 		<p>
-			This is a simple hero unit, a simple jumbotron-style component for calling
-			extra attention to featured content or information.
-		</p>
-		<p>
-			<Button bsStyle="primary">Learn more</Button>
+			The Top Twenty from iTunes Music - explore and get a sneak preview.
 		</p>
 	</Jumbotron>
 

@@ -3,5 +3,23 @@ audio {
 }
 
 .title {
-  background: yellow;
+  color: white;
+  background-image: url('crowd.jpg');
+  background-size: contain;
+}
+
+select {
+  width: 50%;
+  margin: 0 auto;
+}
+
+img {
+  width: 200px;
+}
+
+
+article {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }

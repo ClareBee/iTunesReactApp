@@ -17,7 +17,7 @@ class SongDetails extends React.Component{
         <h3>
       Song: {this.props.song.title.label}
       </h3>
-      <img src={this.props.song['im:image'][0].label} />
+      <img src={this.props.song['im:image'][2].label} />
       <h1>{this.props.song['im:price'].label}</h1>
       <audio controls><source src={this.props.song["link"][1]['attributes'].href} /></audio>
       </article>
