@@ -13,7 +13,7 @@ class SongList extends React.Component{
 
   render(){
     const top20 = this.props.songs.map((song, index) => {
-        return <option value={index} key={index}>{song.title.label}</option>
+        return <option value={index} key={index}>Chart Position {index+1} >>> {song.title.label}</option>
       });
     return(
       <select id="songs" onChange={this.handleChange}>
