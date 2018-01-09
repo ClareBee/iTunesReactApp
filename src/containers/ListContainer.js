@@ -20,6 +20,7 @@ class ListContainer extends React.Component {
       if(request.status !== 200){
         console.log("unsuccessful");
       } else {
+        window.scrollBy(0, 100);
         const response = request.responseText;
         const data = JSON.parse(response);
         const entries = data.feed.entry;
@@ -29,6 +30,9 @@ class ListContainer extends React.Component {
     request.send();
   }
 
+  scroll(){
+    window.scrollBy(0, 100);
+  }
   handleChosenSong(index){
   this.setState({chosenSong: index});
 }

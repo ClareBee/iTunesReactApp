@@ -20,6 +20,8 @@ select {
 
 img {
   width: 200px;
+  border: 7px solid #65009F;
+  border-radius: 5px;
 }
 
 body{
