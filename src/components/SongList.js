@@ -8,7 +8,8 @@ class SongList extends React.Component{
   handleChange(event){
 //to pass to the onSelect function
   this.props.onSelect(parseInt(event.target.value, 10));
-  }
+  window.scrollBy(0, 150);
+}
 
   render(){
     const top20 = this.props.songs.map((song, index) => {
