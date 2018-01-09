@@ -35,7 +35,7 @@ class Trigger extends React.Component {
 						</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
-				       <p id="modal-text" >Thanks to <a target="_blank" href="https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/">iTunesApi link</a></p>
+				       <p id="modal-text" >Thanks to <a target="_blank" href="https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/">iTunesApi (external link)</a></p>
 					</Modal.Body>
 					<Modal.Footer>
 						<Button className="btn btn-danger" onClick={this.handleHide}>Close</Button>

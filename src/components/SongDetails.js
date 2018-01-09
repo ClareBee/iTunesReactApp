@@ -14,8 +14,8 @@ class SongDetails extends React.Component{
     console.log(this.props.song["link"][1]['attributes'].href);
     return(
       <article id="song-detail">
-        <h3>
-      Song: {this.props.song.title.label}
+      <h3 id="song-title">
+        Song: {this.props.song.title.label}
       </h3>
       <h3>Chart Position: {this.props.index + 1} </h3>
       <img src={this.props.song['im:image'][2].label} />

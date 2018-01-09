@@ -1,5 +1,6 @@
 audio {
   border: solid 1px black;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -22,6 +23,7 @@ img {
   width: 200px;
   border: 7px solid #65009F;
   border-radius: 5px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
 body{
@@ -45,5 +47,12 @@ article {
  }
 
 .title-text {
+  display: table;
+  background: rgba(104,0,178, 0.6);
   text-shadow: 2px 2px 5px black;
+  border-radius: 7px;
+}
+
+#song-title {
+  font-weight: bold;
 }
