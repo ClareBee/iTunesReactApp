@@ -23,3 +23,9 @@ article {
   flex-flow: column nowrap;
   align-items: center;
 }
+.modal-container {
+   position: relative;
+ }
+.modal-container .modal, .modal-container .modal-backdrop {
+   position: absolute;
+ }
