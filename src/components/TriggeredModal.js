@@ -32,7 +32,6 @@ class Trigger extends React.Component {
 				>
 					<Modal.Header closeButton>
 						<Modal.Title id="contained-modal-title">
-							Contained Modal
 						</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
