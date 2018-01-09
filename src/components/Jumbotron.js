@@ -8,8 +8,8 @@ class Jumbotrons extends React.Component {
     return(
 
 	<Jumbotron className="title">
-		<h1 class="title-text">TopTrax</h1>
-		<p class="title-text">
+		<h1 className="title-text">TopTrax</h1>
+		<p className="title-text">
 			The Top Twenty from iTunes Music - explore and get a sneak preview.
 		</p>
     <Trigger />
