@@ -9,6 +9,9 @@ class SongList extends React.Component{
 //to pass to the onSelect function
   this.props.onSelect(parseInt(event.target.value, 10));
   window.scrollBy(0, 150);
+  // window.location.reload(true);
+  //reload audio component/clear cache
+  console.log(this.refs.AudioPlay);
 }
 
   render(){
