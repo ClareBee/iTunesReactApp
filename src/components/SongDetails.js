@@ -9,8 +9,8 @@ class SongDetails extends React.Component{
       songToPlay: null
     }
     // this.trackChange = this.trackChange.bind(this);
-
 }
+
   render(){
     if(!this.props.song){
     return null

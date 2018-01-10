@@ -3,6 +3,9 @@ import React from 'react';
 class SongList extends React.Component{
   constructor(props){
   super(props);
+  this.state = {
+    renewed: true
+  }
   this.handleChange = this.handleChange.bind(this);
 }
   handleChange(event){
@@ -12,6 +15,7 @@ class SongList extends React.Component{
   // window.location.reload(true);
   //reload audio component/clear cache
   console.log(this.refs.AudioPlay);
+
 }
 
   render(){
