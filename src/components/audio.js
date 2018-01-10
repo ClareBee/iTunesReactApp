@@ -9,7 +9,12 @@ class Audio extends React.Component {
   reloadPage(){
     window.location.reload(true);
   }
-
+  //try to force reload of audio component
+  // componentWillReceiveProps(nextProps){
+  //   if(nextProps.url !== this.props.url){
+  //     this.forceUpdate();
+  //   }
+  // }
   render(){
     return(
       <audio controls onPause={this.reloadPage}><source src={this.props.url}/></audio>
