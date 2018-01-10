@@ -16,15 +16,15 @@ class SongDetails extends React.Component{
   //   return null
   //   }
   //   var surl = this.props.song["link"][1]['attributes'].href;
-  //   this.setState({songToPlay: surl})
+  //   this.setState({songToPlay: surl});
   // }
 
   render(){
     if(!this.props.song){
     return null
     }
-    var songUrl = this.props.song["link"][1]['attributes'].href;
-    var songHref = this.props.song["link"][0]['attributes'].href;
+    let songUrl = this.props.song["link"][1]['attributes'].href;
+    let songHref = this.props.song["link"][0]['attributes'].href;
     console.log(songHref);
     return(
       <React.Fragment>
@@ -35,7 +35,7 @@ class SongDetails extends React.Component{
       <h3 id="chart-position">Chart Position: {this.props.index + 1} </h3>
       <img src={this.props.song['im:image'][2].label} />
       <h1><i className="fa fa-cart-plus" aria-hidden="true"></i><a href={songHref} target="_blank">{this.props.song['im:price'].label}</a></h1>
-      <AudioPlayer onMouseOver={this.trackChange} url={songUrl} ref="AudioPlay"/>
+      <AudioPlayer onMouseOver={this.trackChange} url={songUrl} />
     </article>
     </React.Fragment>
     );

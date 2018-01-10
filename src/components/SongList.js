@@ -7,9 +7,13 @@ class SongList extends React.Component{
 
 }
   handleChange(event){
-//to pass to the onSelect function
+//to pass to the onSelect function - what does this line do? is it a React callback?
   this.props.onSelect(parseInt(event.target.value, 10));
-  window.scrollBy(0, 150);
+  window.scrollBy(0, 300);
+  // event.target.next().scrollIntoView(false);
+  // event.currentTarget.next().scrollIntoView(false);
+  // event.currentTarget.nextSibling.scrollIntoView(false);
+  window.scrollTo(0, document.body.scrollHeight);
   //reload audio component/clear cache
   console.log(this.refs.AudioPlay);
 }
