@@ -31,7 +31,6 @@ class ListContainer extends React.Component {
 
 
   handleChosenSong(index){
-
   this.setState({chosenSong: index});
 }
 

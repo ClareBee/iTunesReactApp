@@ -9,7 +9,7 @@ class Audio extends React.Component {
   reloadPage(){
     window.location.reload(true);
   }
-  //onMouseOut?
+
   render(){
     return(
       <audio controls onPause={this.reloadPage}><source src={this.props.url}/></audio>
